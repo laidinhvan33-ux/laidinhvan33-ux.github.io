@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAIO - True Matcha Flavor</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    overflow:hidden;
+}
+
+.container{
+    display:flex;
+    width:400%;
+    height:100vh;
+    transition: transform 0.8s ease-in-out;
+}
+
+section{
+    width:100vw;
+    height:100vh;
+    padding:60px;
+    color:white;
+    background:linear-gradient(135deg,#0f3d1f,#1e6b34);
+}
+
+h1{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:28px;
+    opacity:0.8;
+}
+
+.menu{
+    position:fixed;
+    right:40px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu button{
+    padding:15px 30px;
+    background:#e9e2d0;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.menu button:hover{
+    background:#cfc6ad;
+    transform:translateX(-5px);
+}
+
+.content{
+    max-width:600px;
+    line-height:1.6;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+    <button onclick="goTo(0)">Về chúng tôi</button>
+    <button onclick="goTo(1)">Menu</button>
+    <button onclick="goTo(2)">Liên hệ</button>
+    <button onclick="goTo(3)">Fanpage</button>
+</div>
+
+<div class="container" id="slider">
+
+<section>
+    <h1>KAIO</h1>
+    <div class="subtitle">TRUE MATCHA FLAVOR</div>
+</section>
+
+<section>
+    <h1>Về chúng tôi</h1>
+    <div class="content">
+        "Vị ngon nguyên bản giữa màn đêm"<br><br>
+        Kaio là điểm dừng chân dành cho những “cú đêm” chính hiệu – 
+        những người học bài xuyên đêm, chạy deadline hay đơn giản 
+        là thích tận hưởng sự yên tĩnh về khuya.
+    </div>
+</section>
+
+<section>
+    <h1>Menu</h1>
+    <div class="content">
+        Chúng mình phục vụ đa dạng trà sữa và cà phê, 
+        từ ngọt ngào dễ uống đến đậm vị giúp tỉnh táo tức thì.
+    </div>
+</section>
+
+<section>
+    <h1>Liên hệ</h1>
+    <div class="content">
+        Fanpage: KAIO Matcha<br>
+        Hotline: 0123 456 789
+    </div>
+</section>
+
+</div>
+
+<script>
+function goTo(index){
+    document.getElementById("slider").style.transform = "translateX(-" + (index * 100) + "vw)";
+}
+</script>
+
+</body>
+</html>
