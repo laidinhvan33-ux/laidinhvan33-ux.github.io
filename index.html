@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAIO - Năng lượng cho cú đêm</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --matcha:#2f6f3e;
+    --matcha-light:#e8f3ea;
+    --matcha-soft:#a8d5a2;
+    --text-dark:#1f2a1f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:#f7f9f7;
+    color:var(--text-dark);
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:var(--matcha);
+    padding:20px 0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:60px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    letter-spacing:1px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:0.7;
+}
+
+/* ===== SECTION ===== */
+
+section{
+    padding:120px 10%;
+    min-height:100vh;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    background:url("WEB KAIO3.png") center/cover no-repeat;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    line-height:1.2;
+}
+
+/* ===== ABOUT ===== */
+
+.about{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:50%;
+    border-radius:20px;
+}
+
+.about-text{
+    width:50%;
+}
+
+.about-text h2{
+    font-size:32px;
+    color:var(--matcha);
+    margin-bottom:20px;
+    font-family:'Playfair Display', serif;
+}
+
+.about-text p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* ===== PRODUCTS ===== */
+
+.products{
+    background:var(--matcha-light);
+}
+
+.products h2{
+    text-align:center;
+    font-size:32px;
+    color:var(--matcha);
+    margin-bottom:50px;
+    font-family:'Playfair Display', serif;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align:center;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+}
+
+.product img{
+    width:100%;
+    border-radius:15px;
+}
+
+.product h3{
+    margin-top:15px;
+    font-weight:500;
+}
+
+/* ===== MENU ===== */
+
+.menu-section{
+    text-align:center;
+}
+
+.menu-section h2{
+    font-size:32px;
+    color:var(--matcha);
+    margin-bottom:40px;
+    font-family:'Playfair Display', serif;
+}
+
+.menu-box{
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    max-width:800px;
+    margin:auto;
+}
+
+.menu-box ul{
+    list-style:none;
+    columns:2;
+    font-size:18px;
+    line-height:2;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+    background:var(--matcha-light);
+    text-align:center;
+}
+
+.contact h2{
+    font-size:32px;
+    margin-bottom:50px;
+    color:var(--matcha);
+    font-family:'Playfair Display', serif;
+}
+
+.qr-grid{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+}
+
+.qr{
+    background:var(--matcha);
+    padding:40px;
+    border-radius:30px;
+    color:white;
+}
+
+.qr img{
+    width:200px;
+    border-radius:10px;
+}
+
+.qr p{
+    margin-top:15px;
+    font-weight:500;
+}
+
+footer{
+    background:var(--matcha);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<ul>
+<li><a href="#home">TRANG CHỦ</a></li>
+<li><a href="#about">VỀ CHÚNG TÔI</a></li>
+<li><a href="#products">SẢN PHẨM</a></li>
+<li><a href="#menu">MENU</a></li>
+<li><a href="#contact">LIÊN HỆ</a></li>
+</ul>
+</nav>
+
+<!-- TRANG CHỦ -->
+<section id="home" class="hero">
+<h1>Năng lượng<br>cho cú đêm</h1>
+</section>
+
+<!-- VỀ CHÚNG TÔI -->
+<section id="about">
+<div class="about">
+<img src="WEB KAIO2.png">
+<div class="about-text">
+<h2>Vị ngon nguyên bản giữa màn đêm</h2>
+<p>Kaio là điểm dừng chân dành cho những “cú đêm chính hiệu” – nơi tiếp thêm năng lượng để bạn học tập, làm việc và tận hưởng sự yên tĩnh về khuya.</p>
+<p>Chúng mình phục vụ cà phê, matcha, trà sữa với tiêu chí Rẻ – Ngon – Sạch. Đồng hành cùng bạn từ 10 giờ tối đến 2 giờ sáng.</p>
+</div>
+</div>
+</section>
+
+<!-- SẢN PHẨM -->
+<section id="products" class="products">
+<h2>Đồng giá 25K / Size L khi đặt online (ib Zalo)</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="WEB KAIO1.png">
+<h3>Matcha Latte</h3>
+</div>
+
+<div class="product">
+<img src="WEB KAIO1.png">
+<h3>Espresso Arabica</h3>
+</div>
+
+<div class="product">
+<img src="WEB KAIO1.png">
+<h3>Cold Brew</h3>
+</div>
+
+</div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-section">
+<h2>Menu Kaio</h2>
+
+<div class="menu-box">
+<ul>
+<li>Matcha Latte</li>
+<li>Matcha Kem Cheese</li>
+<li>Espresso Arabica</li>
+<li>Espresso Colombia</li>
+<li>Cold Brew</li>
+<li>Phê Xỉu Vani</li>
+<li>Trà Sữa Matcha</li>
+<li>Trà Đào</li>
+<li>Trân Châu Đen</li>
+<li>Trân Châu Trắng</li>
+<li>Foam Cheese</li>
+<li>Thạch Matcha</li>
+</ul>
+</div>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="contact" class="contact">
+<h2>Liên hệ với Kaio</h2>
+
+<div class="qr-grid">
+
+<div class="qr">
+<img src="zalo.png">
+<p>Zalo Order</p>
+</div>
+
+<div class="qr">
+<img src="fanpage.png">
+<p>Facebook Fanpage</p>
+</div>
+
+<div class="qr">
+<img src="shopee.png">
+<p>ShopeeFood</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 KAIO Coffee - Năng lượng cho cú đêm
+</footer>
+
+</body>
+</html>
