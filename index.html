@@ -229,6 +229,11 @@ padding:20px;
 
 <!-- NAVBAR -->
 <nav>
+
+<div class="nav-container">
+
+<img src="logo.png" class="logo">
+
 <ul>
 <li><a href="#home">TRANG CHỦ</a></li>
 <li><a href="#about">VỀ CHÚNG TÔI</a></li>
@@ -236,8 +241,27 @@ padding:20px;
 <li><a href="#menu">MENU</a></li>
 <li><a href="#contact">LIÊN HỆ</a></li>
 </ul>
-</nav>
 
+</div>
+
+</nav>
+.nav-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:90%;
+margin:auto;
+}
+
+.logo{
+height:40px;
+}
+
+nav ul{
+display:flex;
+gap:50px;
+list-style:none;
+}
 <!-- HERO -->
 <section id="home" class="hero"></section>
 
@@ -360,6 +384,7 @@ hoàn thành những mục tiêu của mình – dù là 10 giờ tối hay 2 gi
 </body>
 </html>
 ```
+
 
 
 
