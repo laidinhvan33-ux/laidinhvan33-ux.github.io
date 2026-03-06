@@ -1,7 +1,7 @@
 ```html
 <!DOCTYPE html>
 <html lang="vi">
-<head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KAIO - Năng lượng cho cú đêm</title>
@@ -78,6 +78,42 @@ font-size:18px;
 .product:hover{
 transform:translateY(-10px);
 box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+ .product-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+ /* Tablet */
+@media (max-width: 900px){
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* Điện thoại */
+@media (max-width: 600px){
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.product img{
+height:200px;
+}
+}
+ .product img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+}
+ @media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+gap:15px;
+}
+
 }
 /* NAVBAR */
 
@@ -493,6 +529,7 @@ hoàn thành những mục tiêu của mình – dù là 10 giờ tối hay 2 gi
 </body>
 </html>
 ```
+
 
 
 
