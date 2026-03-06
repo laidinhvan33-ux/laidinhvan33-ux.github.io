@@ -9,6 +9,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+ /* RESPONSIVE MOBILE */
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+}
+
+.hero img{
+width:100%;
+height:auto;
+}
+
+.hero-text{
+width:100%;
+text-align:center;
+padding:20px;
+}
+
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.contact-card{
+width:100%;
+}
+
+}
 .logo img{
 height:65px;
 filter: drop-shadow(0 0 2px white) drop-shadow(0 0 2px white);
@@ -155,9 +186,19 @@ padding:120px 10%;
 
 .hero{
 margin-top:60px;
-height:100vh;
+min-height:100vh;
 background:url("Kaio 1.png") no-repeat center;
 background-size:cover;
+background-position:center;
+}
+ @media (max-width:768px){
+
+.hero{
+min-height:60vh;
+background-size:cover;
+background-position:center;
+}
+
 }
 
 /* ABOUT */
@@ -529,6 +570,7 @@ hoàn thành những mục tiêu của mình – dù là 10 giờ tối hay 2 gi
 </body>
 </html>
 ```
+
 
 
 
