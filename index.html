@@ -81,11 +81,6 @@ margin-bottom:40px;
 color:#3f4f35;
 }
 
-.product-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-}
 
 .product{
 background:white;
@@ -110,10 +105,21 @@ font-size:18px;
 transform:translateY(-10px);
 box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
- .product-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
+
+ /* ABOUT MOBILE */
+@media (max-width:768px){
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-container img{
+width:100%;
+max-width:350px;
+margin:auto;
+}
+
 }
  /* Tablet */
 @media (max-width: 900px){
@@ -186,10 +192,8 @@ padding:120px 10%;
 
 .hero{
 margin-top:60px;
-min-height:100vh;
-background:url("Kaio 1.png") no-repeat center;
-background-size:cover;
-background-position:center;
+min-height:70vh;
+background:url("Kaio 1.png") center/cover no-repeat;
 }
  @media (max-width:768px){
 
@@ -207,11 +211,7 @@ background-position:center;
 background:#f5f5f5;
 }
 
-.about-container{
-display:flex;
-align-items:center;
-gap:60px;
-}
+
 
 .about-text{
 flex:1;
@@ -296,7 +296,20 @@ margin:auto;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
- 
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
+
+}
+ img{
+max-width:100%;
+height:auto;
+display:block;
+}
 /* CONTACT */
 
 .contact{
@@ -311,12 +324,20 @@ color:var(--matcha);
 font-family:'Playfair Display', serif;
 }
 
+/* CONTACT MOBILE */
+@media (max-width:768px){
+
 .qr-grid{
-display:flex;
-justify-content:center;
-gap:60px;
+flex-direction:column;
+align-items:center;
+gap:30px;
 }
 
+.qr img{
+width:180px;
+}
+
+}
 .qr{
 background:var(--matcha);
 padding:40px;
@@ -376,11 +397,7 @@ height:40px;
 
 </nav>
 
-nav ul{
-display:flex;
-gap:50px;
-list-style:none;
-}
+
 <!-- HERO -->
 <section id="home" class="hero"></section>
 
@@ -570,6 +587,7 @@ hoàn thành những mục tiêu của mình – dù là 10 giờ tối hay 2 gi
 </body>
 </html>
 ```
+
 
 
 
